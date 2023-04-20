@@ -9,6 +9,7 @@ public class Meeting extends Task {
         this.project = project; // заполнение своих полей
         this.start = start; // заполнение своих полей
     }
+
     public String getTopic() {
         return topic;
     }
@@ -20,6 +21,7 @@ public class Meeting extends Task {
     public String getStart() {
         return start;
     }
+
     @Override
     public boolean matches(String query) {
         if (topic.contains(query)) {
@@ -31,4 +33,4 @@ public class Meeting extends Task {
         return false;
     }
 
-    }
+}
